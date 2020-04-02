@@ -25,7 +25,7 @@
         const model = tf.sequential();
         model.add(tf.layers.dense({units: 15, inputShape: [1]}));
         model.add(tf.layers.dense({units: 10}));
-        model.add(tf.layers.dense({units: 1}));
+        model.add(tf.layers.dense({units: 1,activation: 'linear'}));
         model.compile({loss:'meanSquaredError', optimizer: 'sgd'});
     </script>
 
