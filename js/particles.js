@@ -91,11 +91,11 @@ var pJS = function(tag_id, params){
       detect_on: 'canvas',
       events: {
         onhover: {
-          enable: true,
+          // enable: true,
           mode: 'grab'
         },
         onclick: {
-          enable: true,
+          // enable: true,
           mode: 'push'
         },
         resize: true
