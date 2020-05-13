@@ -1,45 +1,9 @@
-body,
-html {
-    height: 100%;margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;
+body {
+  background-color: black;
+  color: white;
 }
- 
-.btn{
-	color: white; font-size: 18px;
-	transition: 0.4s;
-}
-
-.btn:hover{color:red;}
-
-canvas {
-    
-    z-index: -1;
-}
-
-#particles-js{
-	width: 100%;
-	height: 100%;
-	background-color: black;
-	background-size: cover;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	position:fixed;
-  }
-
-.text {
-	position: absolute;
-	top: 35%;
-	right: 50%;
-	transform: translate(50%,-50%);
-	color: #fff;
-	max-width: 90%;
-	padding: 2em 3em;
-	background: rgba(0, 0, 0, 0.4);
-	text-shadow: 0px 0px 2px #131415;
-	font-family: 'Open Sans', sans-serif;
-}
-
 h1 {
-	font-size: 2.25em;
+	font-size: 50px;
 	font-weight: 700;
 	letter-spacing: -1px;
 }
