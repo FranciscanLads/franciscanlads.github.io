@@ -1,70 +1,491 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	  <title>Franciscan Lads</title>
-	  <!-- Required meta tags -->
-	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	  <!-- Bootstrap CSS -->
-	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	  <!--Favicon-->
-	  <link rel="icon" href="favicon.png" type="image">
-	  <!--Font Awesome Icons-->
-	  <link rel="stylesheet" href="assets/fontawesome-free/css/all.css">
-	  <!-- NOTE TO SELF: CSS FILES MUST BE AT LAST!!! -->
-	  <link rel="stylesheet" media="screen" href="css/style.css">
-	  <link rel="stylesheet" type="text/css" href="css/cards.css">
-	  <link rel="stylesheet" href="css/animate.css">
+  <meta charset="utf-8">
+  <title>Flads</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
-	
-	<section class="container">
-		<div class="text">
-			<h1>Franciscan Lads</h1>
-			<h2>This is Maintained by Ankur, Aryaman, Mayank and Shubhendu</h2>
-			<h4>Links to our basic projects...</h4>
-			<a class="btn btn-dark" href="basic_ml.html" role="button">Linear Regression Model</a><br><br>
-			<a class="btn btn-dark" href="https://ankur-srivastava-1.github.io/Chat/temp.html" role="button">World Chat</a><br><br>
-			<a class="btn btn-dark" href="https://github.com/FranciscanLads/lyrics_generator" role="button">Lyrics Generator</a><br><br>
-			<a class="btn btn-dark" href="https://github.com/FranciscanLads" role="button">Github repository</a><br>
-		</div>
-	</section>
 
-	<section class="container">
-		<div class="row">
-			<div class="col-sm box">
-				<img src="https://avatars2.githubusercontent.com/u/43565190?s=460&u=7ab786b2c95b2d6264134288135bd5f0020c2909&v=4" width="100" height="100">
-				<p class="nm">Shubhendu Singh <br><em>Keeper/C</em></p>
-				<a href = "https://github.com/ItsTimeToGetOut"><i style="font-size: 22px;" class="fab fa-github" ></i></a>
-			</div>
-			<div class="col-sm box">
-				<img src="https://avatars3.githubusercontent.com/u/44107923?s=460&u=1fce0b46047234f776513b7d2aa3c708eff0fe07&v=4" width="100" height="100">
-				<p class="nm">Mayank K. Tolani <br><em>Forward/C++</em></p>
-				<a href = "https://github.com/mayanktolani19"><i style="font-size: 22px;" class="fab fa-github" ></i></a>
-			</div>
-			<div class="col-sm box">
-				<img src="https://avatars3.githubusercontent.com/u/44070135?s=460&u=85204b44be5adcd6734e51b0b9583fceebce8acc&v=4" width="100" height="100">
-				<p class="nm">Aryaman Pande <br><em>Midfielder/Python</em></p>
-				<a href = "https://github.com/aryapande"><i style="font-size: 22px;" class="fab fa-github" ></i></a>
-			</div>
-			<div class="col-sm box">
-				<img src="https://avatars2.githubusercontent.com/u/59230660?s=460&v=4" width="100" height="100">
-				<p class="nm">Ankur Srivastava<br><em>Defender/Java</em></p>
-				<a href = "https://github.com/Ankur-Srivastava-1"><i style="font-size: 22px;" class="fab fa-github" ></i></a>
-			</div>
-		</div>
-	</section>
-	<div id="particles-js"></div>
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container">
 
+      <div class="intro-img">
+        <img src="img/intro-img.svg" alt="" class="img-fluid">
+      </div>
 
+      <div class="intro-info">
+        <h2>Welcome<br>to the official<br>Franciscan Lads Page!</h2>
+        <div>
+          <a href="#about" class="btn-get-started scrollto">About Us</a>
+          <a href="#services" class="btn-services scrollto">Our Projects</a>
+        </div>
+      </div>
 
+    </div>
+  </section><!-- #intro -->
 
-	<!-- scripts for particle.js -->
-	<script src="js/particles.js"></script> 
-	<script src="js/app.js"></script>
-	<!-- The next 3 script tags are for using BOOTSTRAP 4! !-->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	</body>
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>About Us</h3>
+          <br>
+          <h2>Just a bunch of guys trying to Beat the Next Best Thing.</h2>
+        </header>
+
+        <div class="row about-extra">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+            <img src="img/about-extra-2.svg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+            <p>
+              We are a group of computer science students working towards building our own startup. Currently we are focused on learning new skills and technology in our domain.
+            </p>
+            <p>
+              Our team comprises of versatile developers with some experience in almost all the major fields of computer science, Machine Learning, Automation, Cybersecurity, Website and Multiplatform App Development, Network Programming, Data Structures and Algorithms among others. You'll often find us at 4 a.m. bug fixing video calls. 
+            </p>
+            <p>
+              Want to collaborate? Start by opening a pull request or an issue, we wanna know if you really are interested. We'll do the rest.
+            </p>
+          </div>
+          
+        </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+                <th scope="col">About</th>
+                <th scope="col">Picture/Bitmoji</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+                <td scope="row">Are you sure you or your website is Safe Online? Meet our cyber security and networking specialist. An advanced Flutter developer and likes to tinker around with Tensorflow and Linux. Want to deploy anything on the Web, he'll be ready with a terminal even when you aren't. And the only one of us who uses a Mac. Here are some of the projects he led and contributed to => <a href="https://github.com/ItsTimeToGetOut/certificate_maker">Certificate Maker, </a><a href="https://github.com/FranciscanLads/X-Y-fit">X-Y Fit, </a><a href="https://github.com/FranciscanLads/lyrics_generator">Lyrics Generator,</a> and Socials, you'll get to know about it later :].</td>
+                <td class="w-25" align="center">
+                  <img src="shubhendu.jpeg" class="img-fluid img-thumbnail" style="width: 128px; height: 128px;">
+                </td>
+          </tr>
+          <tr>
+                <td scope="row">Have an Idea and want the world to look at it? This guy has solution to literally every way you can express your ideas. He's good in Web, Android, Flask and many more deployment scenarios, and boy he makes them look sexy. Also a Machine Learning and AI enthusiast. Also he has that muscular build, if you're into that ;).Here are some of the projects he led and contributed to => <a href="https://github.com/mayanktolani19/flutter_mlkit">ML Kit, </a><a href="https://github.com/mayanktolani19/TalkSpot">TalkSpot, </a><a href="https://github.com/mayanktolani19/Genderify">Genderify, </a><a href="https://github.com/mayanktolani19/Background-Generator">Background Generator. </a></td>
+                <td class="w-25" align="center">
+                  <img src="mayank.png" class="img-fluid img-thumbnail" style="width: 128px; height: 128px;">
+                </td>
+          </tr>
+          <tr>
+                <td scope="row">Need to do literally anything? He can write a Python Script for you in minutes. Automation is his hobby and Data is what he likes to play with. Good luck getting his cookies for your website :/. Also, loves the Maths behind all the ways a Machine can LEARN. Is always ready to learn something he does'nt know.Here are some of the projects he led and contributed to =>  <a href="https://github.com/ItsTimeToGetOut/certificate_maker">Certificate Maker, </a>, <a href="https://github.com/FranciscanLads/X-Y-fit">X-Y Fit, </a> , <a href="http://rain.flads.in/">Rainfall Predictor</a></td>
+                <td class="w-25" align="center">
+                  <img src="aryaman.jpeg" class="img-fluid img-thumbnail" style="width: 128px; height: 128px;">
+                </td>
+          </tr>
+          <tr>
+                <td scope="row">Need to win a hackathon? This guy will spin up ideas on the spot. Knows Stuff about Machine and Deep Learning, Artificial Intelligence, Github, Website Development, Flutter. The list may go on but he's currently procrastinating. He has played active role in the Development of https://flads.in , The X-Y fit Project and is the sole contributor of the World Chat Project.</td>
+                <td class="w-25" align="center">
+                  <img src="ankur.jpg" class="img-fluid img-thumbnail" style="width: 128px; height: 128px;">
+                </td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Projects Section
+    ============================-->
+    <section id="services" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Projects</h3>
+          <p>Links to our basic projects...</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <!-- <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div> -->
+              <h4 class="title"><a href="https://flads.in/basic_ml.html">Linear Regression Model</a></h4>
+              <p class="description">A Basic Machine Learning Model which tries to predict a value without knowing the equation.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <!-- <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div> -->
+              <h4 class="title"><a href="">Lyrics Generator</a></h4>
+              <p class="description">This is a mini project which tries to generate lyrics.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <!-- <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div> -->
+              <h4 class="title"><a href="https://ankur-srivastava-1.github.io/Chat/temp.html">World Chat</a></h4>
+              <p class="description">An oversimplified chat model for basic understanding of how it works.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <!-- <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div> -->
+              <h4 class="title"><a href="http://rain.flads.in/">Rainfall Predictor</a></h4>
+              <p class="description">A Machine Learning model which predicts rainfall in States in India in the coming years.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <!-- <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div> -->
+              <h4 class="title"><a href="http://certificate.flads.in/">Certificate Generator</a></h4>
+              <p class="description">A Flask website that generates multiple certificates in one go for distribution.</p>
+            </div>
+          </div>
+
+          
+
+      </div>
+    </section><!-- #services -->
+    <!--==========================
+      Project Ideas Section
+    ============================-->
+    <section id="why-us" class="wow fadeIn">
+      <div class="container">
+        <header class="section-header">
+          <h3>Project Ideas</h3>
+          <p>Only if we weren't a group of boys who love to procrastinate, these would have been under the 'Projects' Section. Hit us up if you wanna collaborate on any one of these.</p>
+        </header>
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span>Shubhendu</span>
+            <p>Data Training Online 
+            <br>Social Media App
+            <br>DDOS Script
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span>Mayank</span>
+            <p>CSGO Bot
+            <br>Movie Recommender
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span>Aryaman</span>
+            <p>Nudity Classifier
+            <br>Tic Tac Toe Using RL (AI)
+            <br>Basic Chat Bot
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span>Ankur</span>
+            <p>Multi Level Translation API
+            	<br>*Should Start Using His Head More*
+            </p>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container">
+        <div class="section-header">
+          <h3>Team</h3>
+          <p>Here's the Line Up!</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="https://avatars2.githubusercontent.com/u/43565190?s=460&u=7ab786b2c95b2d6264134288135bd5f0020c2909&v=4" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Shubhendu Singh</h4>
+                  <span>Keeper</span>
+                  <div class="social">
+                    <a href="https://twitter.com/stevebrucejames"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/shubhendu15/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/itstimetogetout/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/itstimetogetout/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/ItsTimeToGetOut"><i class="fa fa-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="https://avatars3.githubusercontent.com/u/44107923?s=460&u=1fce0b46047234f776513b7d2aa3c708eff0fe07&v=4" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Mayank Tolani</h4>
+                  <span>Forward</span>
+                  <div class="social">
+                    <!-- <a href=""><i class="fa fa-twitter"></i></a> -->
+                    <a href="https://www.facebook.com/mayank.tolani.712"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/mayanktolani19/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mayanktolani19/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/mayanktolani19"><i class="fa fa-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="https://avatars3.githubusercontent.com/u/44070135?s=460&u=85204b44be5adcd6734e51b0b9583fceebce8acc&v=4" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Aryaman Pande</h4>
+                  <span>Mid Fielder</span>
+                  <div class="social">
+                    <a href="https://twitter.com/CookieGimme"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/aryaman.pande.9"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/psychedelic_bhakt/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/aryaman-pande-834368169/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/aryapande"><i class="fa fa-github"></i></a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="https://avatars2.githubusercontent.com/u/59230660?s=460&v=4" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Ankur Srivastava</h4>
+                  <span>Defender</span>
+                  <div class="social">
+                    <!-- <a href=""><i class="fa fa-twitter"></i></a> -->
+                    <a href="https://www.facebook.com/ankur.srs45"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/ankursrivastava57/"><i class="fa fa-instagram"></i></a>
+                    <!-- <a href=""><i class="fa fa-linkedin"></i></a> -->
+                    <a href="https://github.com/Ankur-Srivastava-1"><i class="fa fa-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="container">
+        <header class="section-header">
+        </header>
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+           <p> Cyber Security<br>Flutter<br>Tensorflow<br>Network Programming<br>Linux</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <p>
+            	Web Development<br>Machine Learning<br>Flutter<br>Algorithms<br>Python
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <p>
+            	Artificial Intelligence & ML<br>Python<br>Flask<br>Competitive Coding<br>Graphic Design
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <p>
+            	Flutter<br>Web Development<br>Deep Learning<br>Github
+            </p>
+          </div>
+  
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+        </div>
+
+        <div class="row wow fadeInUp">
+
+          <div class="col-lg-8">
+            <div class="map mb-4 mb-lg-0">
+              <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=St%20francis'%20college%20lucknow+(Franciscan%20Lads)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-md-5 info">
+                <i class="ion-ios-location-outline"></i>
+                <p>Shahnajaf Rd, Hazratganj, Lucknow, Uttar Pradesh 226001</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 info">
+                <i class="ion-ios-email-outline"></i>
+                <p>franciscanlads@gmail.com</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 info">
+                <i class="ion-ios-telephone-outline"></i>
+                <p>+917084753333</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>Franciscan</h3>
+            <h3>Lads</h3>
+            <!-- <p></p> -->
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <!-- <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li> -->
+              <h5><a href="https://github.com/FranciscanLads">Our Github Page</a></h5>
+              <h5><a href="http://shubhendusingh.in">Shubhendu Singh</a></h5>
+              <h5><a href="http://mayank.flads.in">Mayank Tolani</a></h5>
+              <h5><a href="http://aryaman.flads.in">Aryaman Pande</a></h5>
+              <h5><a href="http://ankur.flads.in">Ankur Srivastava</a></h5>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Shahnajaf Rd, Hazratganj <br>
+              Lucknow, Uttar Pradesh 226001<br>
+              India<br>
+              <strong>Phone:</strong> +91 70847 53333<br>
+              <strong>Email:</strong> franciscanlads@gmail.com<br>
+            </p>
+
+            <div class="social-links">
+<!--               <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> -->
+              <a href="https://www.linkedin.com/company/f-l/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <!-- <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>NewBiz</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
 </html>
