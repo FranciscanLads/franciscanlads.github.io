@@ -1,4 +1,4 @@
-# Our Team
+# Our Team xyzby
 
 We are a group of computer science students working towards building our own startup. Currently we are focused on learning new skills and technology in our domain. Our team comprises of versatile developers with some experience in almost all the major fields of computer science, Machine Learning, Automation, Cybersecurity, Website and Multiplatform App Development, Network Programming, Data Structures and Algorithms among others. You'll often find us at 4 a.m. bug fixing video calls.
 
