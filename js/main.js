@@ -35,9 +35,10 @@
     }
   });
 
-  if ($(window).scrollTop() > 100) {
-    $('#header').addClass('header-scrolled');
-  }
+  // Might be redundant
+  // if ($(window).scrollTop() > 100) {
+  //   $('#header').addClass('header-scrolled');
+  // }
 
   // Smooth scroll for the navigation and links with .scrollto classes
   $('.main-nav a, .mobile-nav a, .scrollto').on('click', function() {
