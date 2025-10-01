@@ -231,7 +231,7 @@ train.addEventListener("click", async function() {
 	var loss_function = parseInt(document.querySelector('#losses').value);
 	var optimizer_select = parseInt(document.querySelector('#optimizers').value);
 
-	//CHECKING THE INPUTS AND SETTING DEFAULTS
+	//CHECKING THE INPUTS AND SETTING DEFAULTS UNLESS SPECIFIED
 
 
 	for(var i = 0; i<6; i++)if(!(((parseFloat(x[i].value)) && (parseFloat(y[i].value))) || ((parseFloat(x[i].value)==0) || (parseFloat(y[i].value)==0))))
