@@ -1,6 +1,9 @@
 (function ($) {
   "use strict";
 
+  // Define the specific offset adjustment for the non-scrolled header
+  const HEADER_UNSCROLLED_ADJUSTMENT = 20;
+  
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
     if ($('#preloader').length) {
@@ -44,14 +47,16 @@
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
-        var top_space = 0;
+        var top_space = 0; // Initialize top_space
+        if ($header.length) { // Use the cached $header from PR 5
+        top_space = $header.outerHeight();
 
-        if ($('#header').length) {
-          top_space = $('#header').outerHeight();
+        // If the header is NOT scrolled, apply the constant adjustment
+        if (!$header.hasClass('header-scrolled')) {
+          top_space -= HEADER_UNSCROLLED_ADJUSTMENT;
+        }
+}
 
-          if (! $('#header').hasClass('header-scrolled')) {
-            top_space = top_space - 20;
-          }
         }
 
         $('html, body').animate({
