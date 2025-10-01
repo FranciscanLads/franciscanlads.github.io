@@ -1,8 +1,14 @@
 (function ($) {
   "use strict";
 
+  const $window = $(window);
+  const $header = $('#header');
+  const $body = $('body');
+  const $mainNav = $('.main-nav');
+  const $mobileNav = $('.mobile-nav');
+
   // Preloader (if the #preloader div exists)
-  $(window).on('load', function () {
+  $window.on('load', function () {
     if ($('#preloader').length) {
       $('#preloader').delay(100).fadeOut('slow', function () {
         $(this).remove();
@@ -11,7 +17,7 @@
   });
 
   // Back to top button
-  $(window).scroll(function() {
+  $window.scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
     } else {
@@ -27,29 +33,29 @@
   new WOW().init();
 
   // Header scroll class
-  $(window).scroll(function() {
+  $window.scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled');
+      $#header.addClass('header-scrolled');
     } else {
-      $('#header').removeClass('header-scrolled');
+      $#header.removeClass('header-scrolled');
     }
   });
 
-  if ($(window).scrollTop() > 100) {
-    $('#header').addClass('header-scrolled');
+  if ($window.scrollTop() > 100) {
+    $#header.addClass('header-scrolled');
   }
 
   // Smooth scroll for the navigation and links with .scrollto classes
-  $('.main-nav a, .mobile-nav a, .scrollto').on('click', function() {
+  $($mainNav a, $mobileNav a, .scrollto').on('click', function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
         var top_space = 0;
 
-        if ($('#header').length) {
+        if ($#header.length) {
           top_space = $('#header').outerHeight();
 
-          if (! $('#header').hasClass('header-scrolled')) {
+          if (! $#header.hasClass('header-scrolled')) {
             top_space = top_space - 20;
           }
         }
@@ -63,8 +69,8 @@
           $(this).closest('li').addClass('active');
         }
 
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
+        if ($body.hasClass('mobile-nav-active')) {
+          $body.removeClass('mobile-nav-active');
           $('.mobile-nav-toggle i').toggleClass('fa-times fa-bars');
           $('.mobile-nav-overly').fadeOut();
         }
@@ -76,7 +82,7 @@
   // Navigation active state on scroll
   var nav_sections = $('section');
   var main_nav = $('.main-nav, .mobile-nav');
-  var main_nav_height = $('#header').outerHeight();
+  var main_nav_height = $#header.outerHeight();
 
   $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();
@@ -99,7 +105,7 @@
   });
 
   // Porfolio isotope and filter
-  $(window).on('load', function () {
+  $window.on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
     });
