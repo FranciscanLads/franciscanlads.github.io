@@ -19,8 +19,10 @@
     }
   });
   $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
-    return false;
+    window.scrollTo({
+      top: target.offset().top - top_space,
+      behavior: 'smooth'
+    });
   });
 
   // Initiate the wowjs animation library
