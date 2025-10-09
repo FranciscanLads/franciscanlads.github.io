@@ -1,12 +1,36 @@
-# Our Team
+# 👨‍💻 Our Team
 
-We are a group of computer science students working towards building our own startup. Currently we are focused on learning new skills and technology in our domain. Our team comprises of versatile developers with some experience in almost all the major fields of computer science, Machine Learning, Automation, Cybersecurity, Website and Multiplatform App Development, Network Programming, Data Structures and Algorithms among others. You'll often find us at 4 a.m. bug fixing video calls.
+We’re a group of **Computer Science students** driven by curiosity, caffeine, and the dream of building our own startup.  
+Right now, our focus is on **learning cutting-edge technologies** and turning ideas into impactful solutions.
 
-Want to collaborate? Start by opening a pull request or an issue, we wanna know if you really are interested. We'll do the rest. 
-                    
-Bitmoji | About
-------------- | -------------
-<a href="https://github.com/ItsTimeToGetOut"><img src="https://franciscanlads.github.io/shubhendu.jpeg" > </a> | Are you sure you or your website is Safe Online? Meet our cyber security and networking specialist. An advanced Flutter developer and likes to tinker around with Tensorflow and Linux. Want to deploy anything on the Web, he'll be ready with a terminal even when you aren't. And the only one of us who uses a Mac. Here are some of the projects he led and contributed to => <a href="https://github.com/ItsTimeToGetOut/certificate_maker">Certificate Maker, </a><a href="https://github.com/FranciscanLads/X-Y-fit">X-Y Fit, </a><a href="https://github.com/FranciscanLads/lyrics_generator">Lyrics Generator,</a> and Socials, you'll get to know about it later :].
-<a href="https://github.com/mayanktolani19"><img src="https://franciscanlads.github.io/mayank.png" > </a>  | Have an Idea and want the world to look at it? This guy has solution to literally every way you can express your ideas. He's good in Web, Android, Flask and many more deployment scenarios, and boy he makes them look sexy. Also a Machine Learning and AI enthusiast. Also he has that muscular build, if you're into that ;).Here are some of the projects he led and contributed to => <a href="https://github.com/mayanktolani19/flutter_mlkit">ML Kit, </a><a href="https://github.com/mayanktolani19/TalkSpot">TalkSpot, </a><a href="https://github.com/mayanktolani19/Genderify">Genderify, </a><a href="https://github.com/mayanktolani19/Background-Generator">Background Generator. </a>
-<a href="https://github.com/Ankur-Srivastava-1"><img src="https://franciscanlads.github.io/aryaman.jpeg"></a>| Need to do literally anything? He can write a Python Script for you in minutes. Automation is his hobby and Data is what he likes to play with. Good luck getting his cookies for your website :/. Also, loves the Maths behind all the ways a Machine can LEARN. Is always ready to learn something he does'nt know.Here are some of the projects he led and contributed to => <a href="https://github.com/ItsTimeToGetOut/certificate_maker">Certificate Maker, </a>, <a href="https://github.com/FranciscanLads/X-Y-fit">X-Y Fit, </a> , <a href="http://rain.flads.in/">Rainfall Predictor</a>
-<a href="https://github.com/aryapande"><img src="https://franciscanlads.github.io/ankur.jpg"></a>| Need to win a hackathon? This guy will spin up ideas on the spot. Knows Stuff about Machine and Deep Learning, Artificial Intelligence, Github, Website Development, Flutter. The list may go on but he's currently procrastinating. He has played active role in the Development of http://flads.in , The X-Y fit Project and is the sole contributor of the World Chat Project.
+Our expertise spans across:
+**Machine Learning**, **Automation**, **Cybersecurity**, **Web & App Development**,  
+**Network Programming**, and **Data Structures & Algorithms**.  
+You’ll usually find us debugging together at *4 a.m.* — because that’s when the best code happens.
+
+---
+
+## 🤝 Want to Collaborate?
+Open a **pull request** or **create an issue** — if you’re serious about joining the ride, we’ll take it from there.
+
+---
+
+## 🧠 Meet the Team
+
+| Member | About |
+|:--|:--|
+| [<img src="https://franciscanlads.github.io/shubhendu.jpeg" width="120" height="120" style="border-radius:50%;">](https://github.com/ItsTimeToGetOut) **Shubhendu Singh** | **Cybersecurity & Networking Specialist**<br>Our in-house Linux wizard and Flutter developer. Expert at web deployment, TensorFlow tinkering, and keeping systems safe — both online and offline. Also, the only one who proudly codes on a Mac.<br><br>**Key Projects:** [Certificate Maker](https://github.com/ItsTimeToGetOut/certificate_maker) · [X-Y Fit](https://github.com/FranciscanLads/X-Y-fit) · [Lyrics Generator](https://github.com/FranciscanLads/lyrics_generator) |
+| [<img src="https://franciscanlads.github.io/mayank.png" width="120" height="120" style="border-radius:50%;">](https://github.com/mayanktolani19) **Mayank Tolani** | **Full-Stack & ML Developer**<br>Brings ideas to life through stunning design and solid engineering. Skilled in web, Android, Flask, and Machine Learning. He’s the guy who ensures every project *looks as good as it runs*.<br><br>**Key Projects:** [ML Kit](https://github.com/mayanktolani19/flutter_mlkit) · [TalkSpot](https://github.com/mayanktolani19/TalkSpot) · [Genderify](https://github.com/mayanktolani19/Genderify) · [Background Generator](https://github.com/mayanktolani19/Background-Generator) |
+| [<img src="https://franciscanlads.github.io/aryaman.jpeg" width="120" height="120" style="border-radius:50%;">](https://github.com/Ankur-Srivastava-1) **Ankur Srivastava** | **Automation & Data Enthusiast**<br>If it can be automated, he’ll do it in Python — usually before you finish asking. Passionate about Machine Learning and data-driven insights. Loves exploring the mathematics behind AI.<br><br>**Key Projects:** [Certificate Maker](https://github.com/ItsTimeToGetOut/certificate_maker) · [X-Y Fit](https://github.com/FranciscanLads/X-Y-fit) · [Rainfall Predictor](http://rain.flads.in/) |
+| [<img src="https://franciscanlads.github.io/ankur.jpg" width="120" height="120" style="border-radius:50%;">](https://github.com/aryapande) **Arya Pande** | **ML & Product Developer**<br>The idea machine. From hackathons to real-world apps, he brings creativity and logic together. Skilled in Machine Learning, Deep Learning, Web Dev, Flutter, and GitHub workflows.<br><br>**Key Projects:** [flads.in](http://flads.in) · [X-Y Fit](https://github.com/FranciscanLads/X-Y-fit) · [World Chat](#) |
+
+---
+
+### 🌱 What We Stand For
+- **Learn. Build. Iterate.** Every bug is a lesson.
+- **Collaboration over competition.**
+- **Impact-driven technology** — small steps toward something meaningful.
+
+---
+
+> _“Great things are built at 4 a.m. — one commit at a time.”_
