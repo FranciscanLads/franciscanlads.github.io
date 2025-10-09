@@ -335,45 +335,211 @@
     <!--==========================
       Contact Section
     ============================-->
-    <section id="contact">
-      <div class="container-fluid">
+    <!-- Contact Section (Redesigned, no external libraries) -->
+<section id="contact" class="contact">
+  <div class="contact__container">
 
-        <div class="section-header">
-          <h3>Contact Us</h3>
-        </div>
+    <header class="contact__header">
+      <h2>Contact Us</h2>
+      <p class="contact__tagline">We’d love to hear from you.</p>
+    </header>
 
-        <div class="row wow fadeInUp">
-
-          <div class="col-lg-8">
-            <div class="map mb-4 mb-lg-0">
-              <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=St%20francis'%20college%20lucknow+(Franciscan%20Lads)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="row">
-              <div class="col-md-5 info">
-                <i class="ion-ios-location-outline"></i>
-                <p>Shahnajaf Rd, Hazratganj, Lucknow, Uttar Pradesh 226001</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4 info">
-                <i class="ion-ios-email-outline"></i>
-                <p>franciscanlads@gmail.com</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 info">
-                <i class="ion-ios-telephone-outline"></i>
-                <p>+917084753333</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
+    <div class="contact__content">
+      <!-- Map -->
+      <div class="contact__map" aria-label="Map showing St. Francis' College, Lucknow">
+        <iframe
+          title="St. Francis' College, Lucknow on Google Maps"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=St%20francis'%20college%20lucknow+(Franciscan%20Lads)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
       </div>
-    </section><!-- #contact -->
+
+      <!-- Info Cards -->
+      <div class="contact__cards">
+        <article class="contact-card">
+          <div class="contact-card__icon" aria-hidden="true">
+            <!-- Location pin (inline SVG) -->
+            <svg viewBox="0 0 24 24" width="24" height="24" role="img" aria-label="">
+              <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+            </svg>
+          </div>
+          <div class="contact-card__body">
+            <h3 class="contact-card__title">Address</h3>
+            <p class="contact-card__text">
+              Shahnajaf Rd, Hazratganj, Lucknow, Uttar Pradesh 226001
+            </p>
+          </div>
+        </article>
+
+        <article class="contact-card">
+          <div class="contact-card__icon" aria-hidden="true">
+            <!-- Envelope (inline SVG) -->
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm-.4 3.25-7.04 5.28a1 1 0 0 1-1.12 0L4.4 7.25A1 1 0 0 1 5 6h14a1 1 0 0 1 .6 1.25z"/>
+            </svg>
+          </div>
+          <div class="contact-card__body">
+            <h3 class="contact-card__title">Email</h3>
+            <p class="contact-card__text">
+              <a href="mailto:franciscanlads@gmail.com">franciscanlads@gmail.com</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="contact-card">
+          <div class="contact-card__icon" aria-hidden="true">
+            <!-- Phone (inline SVG) -->
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path d="M6.6 10.2a15.1 15.1 0 0 0 7.2 7.2l2.4-2.4a1 1 0 0 1 1.02-.24c1.12.36 2.33.56 3.58.56a1 1 0 0 1 1 1V20a2 2 0 0 1-2 2c-9.39 0-17-7.61-17-17A2 2 0 0 1 4 3h3.66a1 1 0 0 1 1 1c0 1.25.2 2.46.56 3.58a1 1 0 0 1-.24 1.02L6.6 10.2z"/>
+            </svg>
+          </div>
+          <div class="contact-card__body">
+            <h3 class="contact-card__title">Phone</h3>
+            <p class="contact-card__text">
+              <a href="tel:+917084753333">+91 70847 53333</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ===== Contact: base tokens ===== */
+  .contact {
+    --bg: #ffffff;
+    --fg: #111827;            /* gray-900 */
+    --muted: #6b7280;         /* gray-500 */
+    --card: #f9fafb;          /* gray-50 */
+    --border: #e5e7eb;        /* gray-200 */
+    --accent: #1e40af;        /* blue-800 */
+    --radius: 16px;
+    --shadow: 0 6px 24px rgba(0,0,0,.06);
+    background: var(--bg);
+    color: var(--fg);
+    padding: clamp(2rem, 4vw, 4rem) 1rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .contact {
+      --bg: #0b0f17;
+      --fg: #e5e7eb;
+      --muted: #9ca3af;
+      --card: #121826;
+      --border: #1f2937;
+      --accent: #60a5fa;      /* blue-400 */
+    }
+  }
+
+  .contact__container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .contact__header {
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+  .contact__header h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    line-height: 1.2;
+    margin: 0;
+  }
+  .contact__tagline {
+    margin: .5rem auto 0;
+    color: var(--muted);
+    max-width: 48ch;
+    font-size: .95rem;
+  }
+
+  /* ===== Layout ===== */
+  .contact__content {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: clamp(1rem, 2.5vw, 2rem);
+    align-items: start;
+  }
+  @media (max-width: 900px) {
+    .contact__content {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* ===== Map ===== */
+  .contact__map {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    aspect-ratio: 16 / 9; /* keeps a stable height; iframe fills it */
+  }
+  .contact__map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+
+  /* ===== Cards ===== */
+  .contact__cards {
+    display: grid;
+    gap: .75rem;
+  }
+  .contact-card {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: .75rem;
+    align-items: start;
+    padding: 1rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  .contact-card__icon svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent);
+    margin-top: 2px;
+  }
+  .contact-card__title {
+    margin: 0 0 .25rem 0;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .contact-card__text {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+    word-break: break-word;
+  }
+  .contact-card a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+  }
+  .contact-card a:hover,
+  .contact-card a:focus {
+    border-bottom-color: currentColor;
+    outline: none;
+  }
+
+  /* ===== Motion (reduced-motion friendly) ===== */
+  @media (prefers-reduced-motion: no-preference) {
+    .contact-card {
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .contact-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(0,0,0,.08);
+      border-color: rgba(0,0,0,.06);
+    }
+  }
+</style>
+<!-- #contact -->
 
   </main>
 
