@@ -58,29 +58,187 @@
 				<h1 id="head" class="display-4">Basic Machine <br> Learning Model</h1>
 			</div>
 	</div>
-	<section class="container-fluid">
-		<h3>What does it do?</h3>
-		<p>
-		Considering an equation, this application will take input 6 x values(independant variable) and 6 y values(dependant variable) from you and run 500 epochs over a single neuron <br> and will try to learn the realtionship between them. <br>
-		The Model without knowing the exact equation will try to predict the answer of an unknown x given by you.
-		</p>
+	<section class="app-info" aria-labelledby="what-it-does">
+  <div class="card">
+    <header class="card__header">
+      <h3 id="what-it-does">What does this app do?</h3>
+      <p class="lead">
+        Train a simple <strong>single-neuron (linear)</strong> model on your data and predict the output for a new input.
+      </p>
+    </header>
 
-		<h3>
-		Enter the values: Please try to provide as much variety as you can...
-		</h3>
+    <div class="card__body">
+      <div class="grid">
+        <div class="panel">
+          <h4>How it works</h4>
+          <ol class="steps">
+            <li>Provide <strong>6</strong> values for <em>x</em> (independent variable) and matching <strong>6</strong> values for <em>y</em> (dependent variable).</li>
+            <li>The model trains for <strong>500 epochs</strong> to learn a linear relationship between <em>x</em> and <em>y</em>.</li>
+            <li>After training, enter a new <em>x</em> to get a predicted <em>y</em>.</li>
+          </ol>
+        </div>
 
-		<h5>
-		Please don't leave any cell in the table blank and go to the prediction once a <strong>"Training is Complete"</strong> message pops up.
-		</h5>
-		This will only be able to predict linear relations.<br>
-		The answer will never be accurate,but close to the real answer.<br>
-		<p>
-		Considering an equation, this application will take input 6 x values(independant variable) and 6 y values(dependant variable) from you and run 500 epochs over a single neuron <br> and will try to learn the realtionship between them. <br>
-		The Model without knowing the exact equation will try to predict the answer of an unknown x given by you.
-		</p>
+        <div class="panel">
+          <h4>Input guidelines</h4>
+          <ul class="bullets">
+            <li>Fill <strong>all</strong> 12 cells (6 <em>x</em>, 6 <em>y</em>); no blanks allowed.</li>
+            <li>Use a <strong>varied range</strong> of <em>x</em> values to help the model learn better.</li>
+            <li>Wait for the <strong>“Training complete”</strong> message before making a prediction.</li>
+          </ul>
+        </div>
+      </div>
 
-		<h6>IF NAN IS RETURNED, OUR MODEL WAS NOT ABLE TO TRAIN CORRECTLY TO YOUR VALUES</h6>
-	</section>
+      <aside class="note note--warning" role="note" aria-label="Model limitations">
+        <h5>Limitations</h5>
+        <ul class="bullets">
+          <li>This model captures <strong>linear relations only</strong>.</li>
+          <li>Predictions are <strong>approximate</strong>, not exact.</li>
+          <li>If you see <code>NaN</code> in the result, the model couldn’t train reliably on your inputs. Try:
+            <ul class="bullets bullets--nested">
+              <li>Removing identical or near-identical <em>x</em> values,</li>
+              <li>Avoiding extremely large/small magnitudes,</li>
+              <li>Ensuring each <em>x</em> has a corresponding <em>y</em>.</li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+
+      <details class="note">
+        <summary>Technical quick note</summary>
+        <p>Under the hood this is equivalent to fitting a single linear neuron (y = w·x + b) via gradient descent for 500 epochs.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ====== Tokens ====== */
+  .app-info {
+    --bg: #0b0f17;
+    --fg: #e5e7eb;
+    --muted: #9ca3af;
+    --panel: #121826;
+    --border: #1f2937;
+    --accent: #60a5fa;
+    --accent-strong: #3b82f6;
+    --warn-bg: #2a1b12;
+    --warn-fg: #fca5a5;
+    --radius: 14px;
+    --shadow: 0 10px 28px rgba(0,0,0,.25);
+    background: var(--bg);
+    color: var(--fg);
+    padding: clamp(20px, 4vw, 40px);
+  }
+  @media (prefers-color-scheme: light) {
+    .app-info {
+      --bg: #f3f4f6;
+      --fg: #0f172a;
+      --muted: #6b7280;
+      --panel: #ffffff;
+      --border: #e5e7eb;
+      --accent: #1d4ed8;
+      --accent-strong: #1e40af;
+      --warn-bg: #fff7ed;
+      --warn-fg: #9a3412;
+      --shadow: 0 8px 24px rgba(0,0,0,.08);
+    }
+  }
+
+  /* ====== Card ====== */
+  .card {
+    max-width: 960px;
+    margin: 0 auto;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .card__header {
+    padding: clamp(16px, 3vw, 28px) clamp(16px, 3vw, 28px) 0;
+  }
+  .card__header h3 {
+    margin: 0 0 6px;
+    font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+    line-height: 1.25;
+  }
+  .lead {
+    color: var(--muted);
+    margin: 0 0 6px;
+  }
+  .card__body {
+    padding: clamp(16px, 3vw, 28px);
+  }
+
+  /* ====== Layout ====== */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(12px, 2.2vw, 18px);
+    margin-bottom: 16px;
+  }
+  @media (max-width: 860px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+
+  .panel {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: clamp(12px, 2vw, 16px);
+    background: transparent;
+  }
+  .panel h4 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+  }
+
+  /* ====== Lists ====== */
+  .steps {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+  .steps li { margin: .35rem 0; }
+  .bullets {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+  .bullets li { margin: .35rem 0; }
+  .bullets--nested { margin-top: .35rem; }
+
+  /* ====== Notes ====== */
+  .note {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-top: 10px;
+    background: transparent;
+  }
+  .note summary {
+    cursor: pointer;
+    color: var(--accent-strong);
+    font-weight: 600;
+    outline: none;
+  }
+  .note--warning {
+    background: var(--warn-bg);
+    color: var(--warn-fg);
+    border-color: color-mix(in srgb, var(--warn-fg) 35%, transparent);
+  }
+  .note--warning h5 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+  }
+
+  /* ====== Inline ====== */
+  em { font-style: normal; color: var(--accent); }
+  code {
+    background: rgba(0,0,0,.2);
+    padding: 0 .3em;
+    border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+</style>
+
 
 	<section class="container-fluid">
 		<table border="1">
